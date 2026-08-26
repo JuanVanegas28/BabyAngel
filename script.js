@@ -25,87 +25,87 @@ document.addEventListener('DOMContentLoaded', () => {
        tal como en el diseño original para algunos productos.
   */
   const PRODUCTS = [
-    { code:'BA-001', category:'maternidad', categoryLabel:'Maternidad', badge:'Personalizable',
+    { code:'BA-001', category:'maternidad', categoryLabel:'Maternidad', badge:'Personalizable', tone:'pink',
       title:'Cojín materno o de lactancia',
       desc:'Apoyo cómodo para la lactancia y el descanso, personalizado con nombre, colores y bordado.',
       price:'', overlay:'' },
 
-    { code:'BA-002', category:'baño', categoryLabel:'Baño', badge:'Kit coordinado',
+    { code:'BA-002', category:'baño', categoryLabel:'Baño', badge:'Kit coordinado', tone:'blue',
       title:'Kit de toalla, babero y sacagases',
       desc:'Set coordinado en nombre, colores y diseño para el cuidado diario del bebé.',
       price:'', overlay:'' },
 
-    { code:'BA-003', category:'descanso', categoryLabel:'Descanso', badge:'Descanso supervisado',
+    { code:'BA-003', category:'descanso', categoryLabel:'Descanso', badge:'Descanso supervisado', tone:'pink',
       title:'Nido para bebé o colecho',
       desc:'Espacio acolchado y acogedor, adaptado con nombre, temática, telas y detalles.',
       price:'', overlay:'' },
 
-    { code:'BA-004', category:'baño', categoryLabel:'Baño', badge:'Algodón suave',
+    { code:'BA-004', category:'baño', categoryLabel:'Baño', badge:'Algodón suave', tone:'blue',
       title:'Salida de baño para bebé',
       desc:'Suave y absorbente, con nombre, color y diseño adaptado al estilo elegido.',
       price:'', overlay:'' },
 
-    { code:'BA-005', category:'nacimiento', categoryLabel:'Nacimiento', badge:'Primeros días',
+    { code:'BA-005', category:'nacimiento', categoryLabel:'Nacimiento', badge:'Primeros días', tone:'pink',
       title:'Sabanita de cargar o salida de clínica',
       desc:'Pieza acolchada para cargar al bebé, personalizada con nombre, color y temática.',
       price:'', overlay:'' },
 
-    { code:'BA-006', category:'decoración', categoryLabel:'Decoración', badge:'Espacio reservado',
+    { code:'BA-006', category:'decoración', categoryLabel:'Decoración', badge:'Espacio reservado', tone:'pink',
       title:'Cuadro de bienvenida',
       desc:'Elemento decorativo de 50 x 50 cm creado con el nombre, los colores y la temática del bebé.',
       price:'', overlay:'Cuadro de bienvenida personalizado' },
 
-    { code:'BA-007', category:'ropa', categoryLabel:'Ropa', badge:'Espacio reservado',
+    { code:'BA-007', category:'ropa', categoryLabel:'Ropa', badge:'Espacio reservado', tone:'pink',
       title:'Mamelucos y camisetas',
       desc:'Prendas en algodón personalizadas con nombres, diseños o mensajes especiales.',
       price:'', overlay:'Mamelucos y camisetas' },
 
-    { code:'BA-009', category:'dormitorio', categoryLabel:'Dormitorio', badge:'Hecho a la medida',
+    { code:'BA-009', category:'dormitorio', categoryLabel:'Dormitorio', badge:'Hecho a la medida', tone:'blue',
       title:'Juego de cuna personalizado',
       desc:'Protectores, almohadones, colcha y trenzas coordinados en un mismo concepto.',
       price:'', overlay:'' },
 
-    { code:'BA-011', category:'bolsos', categoryLabel:'Bolsos', badge:'Espacio reservado',
+    { code:'BA-011', category:'bolsos', categoryLabel:'Bolsos', badge:'Espacio reservado', tone:'blue',
       title:'Bolso tipo morral',
       desc:'Morral acolchado y funcional para las salidas y actividades de la familia.',
       price:'', overlay:'Bolso tipo morral' },
 
-    { code:'BA-012', category:'bolsos', categoryLabel:'Bolsos', badge:'Espacio reservado',
+    { code:'BA-012', category:'bolsos', categoryLabel:'Bolsos', badge:'Espacio reservado', tone:'blue',
       title:'Bolso cuadrado personalizado',
       desc:'Formato práctico con tamaño y combinación de telas adaptables a cada cliente.',
       price:'', overlay:'Bolso cuadrado' },
 
-    { code:'BA-013', category:'organización', categoryLabel:'Organización', badge:'Espacio reservado',
+    { code:'BA-013', category:'organización', categoryLabel:'Organización', badge:'Espacio reservado', tone:'blue',
       title:'Pañalera ovalada',
       desc:'Diseño textil para organizar los artículos esenciales del bebé con estilo.',
       price:'', overlay:'Pañalera ovalada' },
 
-    { code:'BA-014', category:'organización', categoryLabel:'Organización', badge:'Espacio reservado',
+    { code:'BA-014', category:'organización', categoryLabel:'Organización', badge:'Espacio reservado', tone:'blue',
       title:'Canasta para el bebé',
       desc:'Canasta decorativa para mantener organizados los productos de aseo y cuidado.',
       price:'', overlay:'Canasta organizadora' },
 
-    { code:'BA-015', category:'otros', categoryLabel:'Otros', badge:'Espacio reservado',
+    { code:'BA-015', category:'otros', categoryLabel:'Otros', badge:'Espacio reservado', tone:'pink',
       title:'Bolsa reutilizable',
       desc:'Bolsa en tela cruda para compras y uso cotidiano, con estampado personalizado.',
       price:'', overlay:'Bolsa reutilizable' },
 
-    { code:'BA-016', category:'baño', categoryLabel:'Baño', badge:'Línea familiar',
+    { code:'BA-016', category:'baño', categoryLabel:'Baño', badge:'Línea familiar', tone:'blue',
       title:'Salida de baño para jóvenes y adultos',
       desc:'Toalla de algodón personalizada con nombre, bordado y detalles de terminación.',
       price:'', overlay:'' },
 
-    { code:'BA-017', category:'baño', categoryLabel:'Baño', badge:'Para todas las edades',
+    { code:'BA-017', category:'baño', categoryLabel:'Baño', badge:'Para todas las edades', tone:'blue',
       title:'Toalla personalizada',
       desc:'Nombre, diseño o motivo especial bordado para bebés, niños, jóvenes y adultos.',
       price:'', overlay:'' },
 
-    { code:'BA-018', category:'kits', categoryLabel:'Kits', badge:'Regalo completo',
+    { code:'BA-018', category:'kits', categoryLabel:'Kits', badge:'Regalo completo', tone:'pink',
       title:'Kit BabyAngel completo',
       desc:'Puede combinar colcha, cojines, sabanita, toalla, babero, sacagases y cojín materno.',
       price:'', overlay:'' },
 
-    { code:'BA-019', category:'decoración', categoryLabel:'Decoración', badge:'Formas y diseños',
+    { code:'BA-019', category:'decoración', categoryLabel:'Decoración', badge:'Formas y diseños', tone:'pink',
       title:'Cojines infantiles',
       desc:'Cojines en diferentes formas y diseños para dar un toque único a cada espacio.',
       price:'', overlay:'' },
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderProducts() {
     grid.innerHTML = PRODUCTS.map(p => `
-      <article class="product-card" data-category="${p.category}">
+      <article class="product-card" data-category="${p.category}" data-tone="${p.tone}">
         <div class="product-image">
           <span class="product-badge">${p.badge}</span>
           <!-- IMAGEN PRODUCTO "${p.title}": reemplaza el contenido de este div por
